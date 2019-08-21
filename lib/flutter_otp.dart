@@ -4,7 +4,7 @@ import 'dart:math';
 import 'package:sms/sms.dart';
 
 class FlutterOtp {
-  int otp;  //Generated OTP
+  int otp; //Generated OTP
 
   void generateOtp() {
     //Generates four digit OTP by default
@@ -17,7 +17,8 @@ class FlutterOtp {
     //function parameter 'message' is optional.
     generateOtp();
     SmsSender sender = new SmsSender();
-    String address = '+91' + phoneNumber;  // +91 for India. Change it according to use.
+    String address =
+        '+91' + phoneNumber; // +91 for India. Change it according to use.
     sender.sendSms(
         new SmsMessage(address, message ?? 'Your OTP is : ' + otp.toString()));
   }
