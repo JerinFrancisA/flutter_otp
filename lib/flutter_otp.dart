@@ -5,7 +5,6 @@ import 'package:sms/sms.dart';
 
 class FlutterOtp {
   int otp;  //Generated OTP
-  int enteredOtp;  //Entered OTP
 
   void generateOtp() {
     //Generates four digit OTP by default
@@ -23,7 +22,7 @@ class FlutterOtp {
         new SmsMessage(address, message ?? 'Your OTP is : ' + otp.toString()));
   }
 
-  bool resultChecker() {
+  bool resultChecker(int enteredOtp) {
     //To validate OTP
     if (enteredOtp != otp)
       return false;
