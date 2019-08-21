@@ -1,0 +1,21 @@
+name: flutter_otp
+description: A new Flutter package for OTP verification.
+version: 0.0.1
+authors:
+  - Fawaz Hussain <fawazfound@gmail.com>
+  - Jerin Francis <jerinfrancis77@gmail.com>
+homepage:
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  sms: ^0.2.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
