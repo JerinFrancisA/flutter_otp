@@ -13,14 +13,14 @@ class FlutterOtp {
     otp = min + Random().nextInt(max - min);
   }
 
-  void sendOtp(String phoneNumber, [String message]) {
+  void sendOtp(String phoneNumber, [String messageText]) {
     //function parameter 'message' is optional.
     generateOtp();
     SmsSender sender = new SmsSender();
     String address =
         '+91' + phoneNumber; // +91 for India. Change it according to use.
     sender.sendSms(
-        new SmsMessage(address, message ?? 'Your OTP is : ' + otp.toString()));
+        new SmsMessage(address, messageText ?? 'Your OTP is : ' + otp.toString()));
   }
 
   bool resultChecker(int enteredOtp) {

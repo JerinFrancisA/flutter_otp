@@ -1,6 +1,6 @@
 name: flutter_otp
-description: A Flutter package for sending OTP and validation of OTP. Four digit OTP (customizable) is sent as a SMS to the given phone number. Also option is provided to verify the OTP entered by the user. SMS can be sent to any country to the specified country code.
-version: 0.1.0
+description: A Flutter package for sending and validating OTP. Four digit OTP (customizable) is sent as a SMS to the given phone number (and country code).
+version: 0.1.1
 authors:
   - Fawaz Hussain <fawazfound@gmail.com>
   - Jerin Francis <jerinfrancis77@gmail.com>

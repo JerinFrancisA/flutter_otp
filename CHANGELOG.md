@@ -1,3 +1,9 @@
+## 0.1.1
+
+* parameter message changed to messageText in sendOtp()
+* README.md updated
+* pubspec.yaml description updated
+
 ## 0.1.0
 
 * example/ directory added
