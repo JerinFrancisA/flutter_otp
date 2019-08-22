@@ -10,7 +10,7 @@ A Flutter package for iOS and Android for sending and verifying OTP to a Phone n
 Add this to your package's pubspec.yaml file:
 ```
 dependencies:
-  flutter_otp: ^0.1.1
+  flutter_otp: ^0.1.2
 ```
 2. Install it
 You can install packages from the command line:
@@ -39,7 +39,7 @@ void sendOtp(String phoneNumber, [String messageText]) {
 ```
 
 >NOTE: 1. 10 digit phoneNumber should be passed
-       2. parameter "messageText" is optional. This is used to customize message text. By default the message text is "Your OTP is : XXXX". If "messageText" parameter is passed then message is sent as "<messageText> XXXX".
+>      2. parameter "messageText" is optional. This is used to customize message text. By default the message text is "Your OTP is : XXXX". If "messageText" parameter is passed then message is sent as "<messageText> XXXX".
 
 2. resultChecker() which takes the OTP entered by the user as a parameter. The function returns true if OTP is matched, else false is returned.
 
@@ -49,9 +49,9 @@ bool resultChecker(int enteredOtp) {
 } 
 ```
 
->NOTE: 1. The OTP entered by user (say, through TextField widget or TextFormField widget etc) is to be passed as a parameter to this function.
+>NOTE: The OTP entered by user (say, through TextField widget or TextFormField widget etc) is to be passed as a parameter to this function.
 
-#Usage
+# Usage
 
 To use this package in your application you need to have a sim card in your mobile.
 

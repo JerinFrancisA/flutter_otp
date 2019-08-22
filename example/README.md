@@ -57,12 +57,6 @@ if(isCorrectOTP) {
 ...
 ```
 
-## Contributors
-1. [Fawaz Hussain](https://github.com/fawazhussain)
-2. [Jerin Francis](https://github.com/JerinFrancisA)
-
-Star 🌟 to show support!
-
 ## More Information
 [Pub package](https://pub.dartlang.org/packages/flutter_otp)
 [Flutter documentation](https://flutter.io/).
