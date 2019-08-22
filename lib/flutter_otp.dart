@@ -19,8 +19,8 @@ class FlutterOtp {
     SmsSender sender = new SmsSender();
     String address =
         '+91' + phoneNumber; // +91 for India. Change it according to use.
-    sender.sendSms(
-        new SmsMessage(address, messageText ?? 'Your OTP is : ' + otp.toString()));
+    sender.sendSms(new SmsMessage(
+        address, messageText ?? 'Your OTP is : ' + otp.toString()));
   }
 
   bool resultChecker(int enteredOtp) {

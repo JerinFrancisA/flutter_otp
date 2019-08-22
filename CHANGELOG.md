@@ -1,3 +1,7 @@
+## 0.1.3
+
+* formatted lib/flutter_otp.dart
+
 ## 0.1.2
 
 * README.md changed
