@@ -1,3 +1,7 @@
+## 0.1.4
+
+* API Reference document added.
+
 ## 0.1.3
 
 * formatted lib/flutter_otp.dart

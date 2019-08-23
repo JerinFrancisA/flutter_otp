@@ -6,13 +6,13 @@ A Flutter package for iOS and Android for sending and verifying OTP to a Phone n
 
 # Installing
 ## Use this package as a library
-1. Depend on it
+### 1. Depend on it
 Add this to your package's pubspec.yaml file:
 ```
 dependencies:
-  flutter_otp: ^0.1.3
+  flutter_otp: ^0.1.4
 ```
-2. Install it
+### 2. Install it
 You can install packages from the command line:
 with Flutter:
 ```
@@ -20,7 +20,7 @@ $ flutter packages get
 ```
 Alternatively, your editor might support flutter packages get. Check the docs for your editor to learn more.
 
-3. Import it
+### 3. Import it
 Now in your Dart code, you can use:
 ```
 import 'package:flutter_otp/flutter_otp.dart';
@@ -38,8 +38,8 @@ void sendOtp(String phoneNumber, [String messageText]) {
 }
 ```
 
->NOTE: 1. 10 digit phoneNumber should be passed
->      2. parameter "messageText" is optional. This is used to customize message text. By default the message text is "Your OTP is : XXXX". If "messageText" parameter is passed then message is sent as "<messageText> XXXX".
+>NOTE: 1. 10 digit phoneNumber should be passed.
+>      2. parameter "messageText" is optional. By default the message text is "Your OTP is : XXXX". If "messageText" parameter is passed then message is sent as "<messageText> XXXX".
 
 2. resultChecker() which takes the OTP entered by the user as a parameter. The function returns true if OTP is matched, else false is returned.
 
