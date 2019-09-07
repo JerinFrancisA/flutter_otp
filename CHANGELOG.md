@@ -1,3 +1,7 @@
+## 0.2.3
+
+* sendOtp() fixed: optional params list
+
 ## 0.2.2
 
 * Provide minimum and maximum OTP range
