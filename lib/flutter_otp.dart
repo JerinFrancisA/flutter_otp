@@ -21,9 +21,10 @@ class FlutterOtp {
   /// [messageText] as a optional parameter. If [messageText] is not passed it is
   /// taken as 'You OTP is : <Generated OTP>'.
 
-  void sendOtp(String phoneNumber, [String messageText]) {
+  void sendOtp(String phoneNumber,
+      [String messageText, int min = 1000, int max = 9999]) {
     //function parameter 'message' is optional.
-    generateOtp();
+    generateOtp(min, max);
     SmsSender sender = new SmsSender();
     String address =
         '+91' + phoneNumber; // +91 for India. Change it according to use.
