@@ -1,6 +1,15 @@
+## 0.2.2
+
+* Provide minimum and maximum OTP range
+
+## 0.2.0
+
+* Security within classes increased
+* pubspec.yaml upgraded
+
 ## 0.1.4
 
-* API Reference document added.
+* API Reference document added
 
 ## 0.1.3
 

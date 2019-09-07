@@ -10,7 +10,7 @@ A Flutter package for iOS and Android for sending and verifying OTP to a Phone n
 Add this to your package's pubspec.yaml file:
 ```
 dependencies:
-  flutter_otp: ^0.1.4
+  flutter_otp: ^0.2.2
 ```
 ### 2. Install it
 You can install packages from the command line:
@@ -111,7 +111,9 @@ if(isCorrectOTP) {
 1. [Fawaz Hussain](https://github.com/fawazhussain)
 2. [Jerin Francis](https://github.com/JerinFrancisA)
 
+
 Star 🌟 to show support!
+
 
 ## More Information
 [Pub package](https://pub.dartlang.org/packages/flutter_otp)
