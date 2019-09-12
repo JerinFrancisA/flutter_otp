@@ -1,64 +1,72 @@
-# flutter_otp
-
-A Flutter package for iOS and Android for sending and verifying OTP to a Phone number.
-For code example see this [example code](https://pub.dev/packages/flutter_otp#-readme-tab-)
-
-:star: the repo to show your support !
-
 # Example
 
-Example Usage:
+## For more information read [Pub Package](https://pub.dev/packages/flutter_otp#-readme-tab-)
 
 ```
-...
-sendOtp('958347XXXX');  //Pass phone number as String
+import 'package:flutter/material.dart';
+import 'package:flutter_otp/flutter_otp.dart';
 
-...
+void main() => runApp(HomeScreen());
 
+FlutterOtp otp = FlutterOtp();
+String result;
 int enteredOtp;
-TextField(
-  onChanged: (val) {
-    enteredOtp = val;    
-  }
-)
 
-...
-
-bool isCorrectOTP = resultChecker();
-if(isCorrectOTP) {
-    print('Success');
-} else {
-    print('Failure');
+class HomeScreen extends StatefulWidget {
+  @override
+  _HomeScreenState createState() => _HomeScreenState();
 }
-...
-```
 
-OR custom "messageText" can be passed as parameter to sendOTP
+class _HomeScreenState extends State<HomeScreen> {
+  String phoneNumber;
 
-```
-...
-sendOtp('958347XXXX', 'OTP is : ');  //Pass phone number and Custom messaseText as String
-
-...
-
-int enteredOtp;
-TextField(
-  onChanged: (val) {
-    enteredOtp = val;    
+  @override
+  Widget build(BuildContext context) {
+    bool yesOrNo = otp.resultChecker(enteredOtp);
+    return MaterialApp(
+      home: SafeArea(
+        child: Scaffold(
+          body: Center(
+            child: Column(
+              children: <Widget>[
+                Text('Enter Phone:'),
+                TextField(
+                  onChanged: (val) {
+                    phoneNumber = val;
+                  },
+                ),
+                RaisedButton(
+                  child: Text('SEND OTP'),
+                  onPressed: () {
+                    otp.sendOtp(phoneNumber);
+                  },
+                ),
+                Text('Enter OTP sent to your phone'),
+                TextField(
+                  onChanged: (val) {
+                    enteredOtp = int.parse(val);
+                  },
+                ),
+                RaisedButton(
+                  child: Text('VERIFY'),
+                  onPressed: () {
+                    setState(() {
+                      bool yesOrNo = otp.resultChecker(enteredOtp);
+                      print(yesOrNo);
+                    });
+                  },
+                ),
+                Center(
+                  child: Text(yesOrNo.toString()),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
   }
-)
-
-...
-
-bool isCorrectOTP = resultChecker();
-if(isCorrectOTP) {
-    print('Success');
-} else {
-    print('Failure');
 }
-...
+
 ```
 
-## More Information
-[Pub package](https://pub.dartlang.org/packages/flutter_otp)
-[Flutter documentation](https://flutter.io/).
