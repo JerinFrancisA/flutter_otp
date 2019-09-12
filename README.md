@@ -38,8 +38,10 @@ void sendOtp(String phoneNumber, [String messageText]) {
 }
 ```
 
->NOTE: 1. 10 digit phoneNumber should be passed.
->      2. parameter "messageText" is optional. By default the message text is "Your OTP is : XXXX". If "messageText" parameter is passed then message is sent as "<messageText> XXXX".
+>NOTE:
+> 1. 10 digit phoneNumber should be passed.
+
+> 2. parameter "messageText" is optional. By default the message text is "Your OTP is : XXXX". If "messageText" parameter is passed then message is sent as "<messageText> XXXX".
 
 2. resultChecker() which takes the OTP entered by the user as a parameter. The function returns true if OTP is matched, else false is returned.
 
