@@ -2,7 +2,7 @@
 
 # flutter_otp
 
-A Flutter package for iOS and Android for sending and verifying OTP to a Phone number.
+A Flutter package for Android and iOS for sending and verifying OTP to a Phone number.
 
 # Installing
 ## Use this package as a library
