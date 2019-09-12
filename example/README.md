@@ -3,6 +3,8 @@
 A Flutter package for iOS and Android for sending and verifying OTP to a Phone number.
 For code example see this [example code](https://pub.dev/packages/flutter_otp#-readme-tab-)
 
+:star: the repo to show your support !
+
 # Example
 
 Example Usage:
