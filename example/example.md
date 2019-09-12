@@ -1,4 +1,4 @@
-#Example
+# Example
 
 ## For more information read [Pub Package](https://pub.dev/packages/flutter_otp#-readme-tab-)
 
