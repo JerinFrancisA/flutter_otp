@@ -24,14 +24,19 @@ class FlutterOtp {
   /// This function should be called with [phoneNumber] as a Parameter and
   /// [messageText] as a optional parameter. If [messageText] is not passed it is
   /// taken as 'You OTP is : <Generated OTP>'.
-
+  /// You can also pass [countryCode] (optional) as a parameter to sendtOtp function
+  /// Otherwise +91 is taken as default country code (INDIA)
+   
   void sendOtp(String phoneNumber,
-      [String messageText, int min = 1000, int max = 9999]) {
+      [String messageText,
+      int min = 1000,
+      int max = 9999,
+      String countryCode = '+91']) {
     //function parameter 'message' is optional.
     generateOtp(min, max);
     SmsSender sender = new SmsSender();
-    String address =
-        '+91' + phoneNumber; // +91 for India. Change it according to use.
+    String address = (countryCode ?? '+91') +
+        phoneNumber; // +91 for India. Change it according to use.
     sender.sendSms(new SmsMessage(
         address, messageText ?? 'Your OTP is : ' + _otp.toString()));
   }
