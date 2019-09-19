@@ -4,6 +4,7 @@
 
 A Flutter package for Android and iOS for sending and verifying OTP to a Phone number.
 
+## Important for
 # Installing
 ## Use this package as a library
 ### 1. Depend on it
