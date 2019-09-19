@@ -27,16 +27,21 @@ class FlutterOtp {
   /// You can also pass [countryCode] (optional) as a parameter to sendtOtp function
   /// Otherwise +91 is taken as default country code (INDIA)
    
-  void sendOtp(String phoneNumber,
+  void sendOtp(String phoneNumber, String countryCode,
       [String messageText,
       int min = 1000,
-      int max = 9999,
-      String countryCode = '+91']) {
+      int max = 9999,]) {
     //function parameter 'message' is optional.
     generateOtp(min, max);
     SmsSender sender = new SmsSender();
-    String address = (countryCode ?? '+91') +
-        phoneNumber; // +91 for India. Change it according to use.
+    String address = (countryCode ?? '+1') +
+        phoneNumber; // +1 for USA. Change it according to use.
+
+    /// Use country code as per your requirement.
+    /// +1 : USA / Canada
+    /// +91: India
+    /// +44: UK
+    /// 
     sender.sendSms(new SmsMessage(
         address, messageText ?? 'Your OTP is : ' + _otp.toString()));
   }
