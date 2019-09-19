@@ -4,14 +4,18 @@
 
 A Flutter package for Android and iOS for sending and verifying OTP to a Phone number.
 
-## Important for
+### Important message for existing Users
+#### NEW FEATURE !!
+
+Now you can send the message to any country code passed as a parameter to the interface (sendOtp() function)
+
 # Installing
 ## Use this package as a library
 ### 1. Depend on it
 Add this to your package's pubspec.yaml file:
 ```
 dependencies:
-  flutter_otp: ^0.2.4
+  flutter_otp: ^0.2.6
 ```
 ### 2. Install it
 You can install packages from the command line:

@@ -1,6 +1,11 @@
+## 0.2.6
+
+* NEW FEATURE !!! : country code parameter added (+1 by default)
+* parameter countryCode (optional) is included
+
 ## 0.2.4
 
-* Doc-strings updated.
+* Doc-strings updated
 * example/README.md updated 
 
 ## 0.2.3
