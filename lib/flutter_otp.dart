@@ -26,7 +26,7 @@ class FlutterOtp {
   /// taken as 'You OTP is : <Generated OTP>'.
   /// You can also pass [countryCode] (optional) as a parameter to sendtOtp function
   /// Otherwise +91 is taken as default country code (INDIA)
-   
+
   void sendOtp(String phoneNumber,
       [String messageText,
       int min = 1000,
@@ -42,7 +42,7 @@ class FlutterOtp {
     /// +1 : USA / Canada
     /// +91: India
     /// +44: UK
-     
+
     sender.sendSms(new SmsMessage(
         address, messageText ?? 'Your OTP is : ' + _otp.toString()));
   }

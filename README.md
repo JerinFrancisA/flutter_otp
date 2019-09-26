@@ -19,7 +19,7 @@ Now you can send the message to any country code passed as a parameter to the in
 Add this to your package's pubspec.yaml file:
 ```
 dependencies:
-  flutter_otp: ^0.2.6
+  flutter_otp: ^0.2.8
 ```
 ### 2. Install it
 You can install packages from the command line:

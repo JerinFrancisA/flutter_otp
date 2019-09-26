@@ -1,3 +1,8 @@
+## 0.2.8
+
+* Code modifications
+* Ran flutter format on lib/flutter_otp.dart
+
 ## 0.2.6
 
 * NEW FEATURE !!! : country code parameter added (+1 by default)
