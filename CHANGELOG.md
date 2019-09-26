@@ -1,3 +1,7 @@
+## 0.2.9
+
+* Removed broken links from README.md
+
 ## 0.2.8
 
 * Code modifications
