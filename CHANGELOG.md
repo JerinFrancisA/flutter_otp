@@ -1,3 +1,8 @@
+## 0.3.0
+
+* private variable naming convention changed
+* bug fixes
+
 ## 0.2.9
 
 * Removed broken links from README.md

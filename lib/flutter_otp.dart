@@ -4,7 +4,7 @@ import 'dart:math';
 import 'package:sms/sms.dart';
 
 class FlutterOtp {
-  int _otp, _min, _max; //Generated OTP
+  int _otp, _minOtpValue, _maxOtpValue; //Generated OTP
 
   /// This function is used to generate a Random OTP in the range [1000, 9999]
   /// which can be used to send and verify. The [Random.nexInt] function is been
@@ -16,9 +16,9 @@ class FlutterOtp {
 
   void generateOtp([int min = 1000, int max = 9999]) {
     //Generates four digit OTP by default
-    _min = min;
-    _max = max;
-    _otp = _min + Random().nextInt(_max - _min);
+    _minOtpValue = min;
+    _maxOtpValue = max;
+    _otp = _minOtpValue + Random().nextInt(_maxOtpValue - _minOtpValue);
   }
 
   /// This function should be called with [phoneNumber] as a Parameter and
