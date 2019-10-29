@@ -1,3 +1,7 @@
+## 0.3.1
+
+* simplified boolean expression
+
 ## 0.3.0
 
 * private variable naming convention changed

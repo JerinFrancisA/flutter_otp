@@ -53,9 +53,6 @@ class FlutterOtp {
 
   bool resultChecker(int enteredOtp) {
     //To validate OTP
-    if (enteredOtp != _otp)
-      return false;
-    else
-      return true;
+    return enteredOtp == _otp;
   }
 }
