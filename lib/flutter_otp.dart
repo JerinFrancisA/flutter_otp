@@ -42,6 +42,7 @@ class FlutterOtp {
     /// +1 : USA / Canada
     /// +91: India
     /// +44: UK
+    /// For other countries, please refer https://countrycode.org/
 
     sender.sendSms(new SmsMessage(
         address, messageText ?? 'Your OTP is : ' + _otp.toString()));
