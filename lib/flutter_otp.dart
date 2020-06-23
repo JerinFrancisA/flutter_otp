@@ -14,6 +14,8 @@ class FlutterOtp {
   /// params to sendOTP() function. Otherwise the Range [1000, 9999] is taken as
   /// default.
 
+  int get otp => _otp;
+
   void generateOtp([int min = 1000, int max = 9999]) {
     //Generates four digit OTP by default
     _minOtpValue = min;
