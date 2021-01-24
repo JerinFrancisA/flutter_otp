@@ -45,7 +45,7 @@ class FlutterOtp {
     /// For other countries, please refer https://countrycode.org/
 
     sender.sendSms(new SmsMessage(
-        address, messageText ?? 'Your OTP is : ' + _otp.toString()));
+        address, (messageText ?? 'Your OTP is : ') + _otp.toString()));
   }
 
   /// This function is used to validate the OTP entered by the user, by comparing
